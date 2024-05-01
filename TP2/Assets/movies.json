@@ -1,0 +1,61 @@
+{
+	"movies": 
+	[
+	  {
+		"id": 1,
+		"movieName": "Terminator",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Terminator1984movieposter.jpg/220px-Terminator1984movieposter.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 2,
+		"movieName": "Predator",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Predator_Movie.jpg/220px-Predator_Movie.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 3,
+		"movieName": "Raw Deal",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Raw_deal.jpg/220px-Raw_deal.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 4,
+		"movieName": "Commando",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Commandoposter.jpg/220px-Commandoposter.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 5,
+		"movieName": "Total Recall",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Total_recall.jpg/220px-Total_recall.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 6,
+		"movieName": "Kindergarten Cop",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/3/36/Kindergarten_Cop_film.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 7,
+		"movieName": "Last Action Hero",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/0/0e/Last_action_hero_ver2.jpg",
+		"numLikes": 0,
+		"numDislikes": 0
+	  },
+	  {
+		"id": 8,
+		"movieName": "True Lies",
+		"moviePictureUrl": "https://upload.wikimedia.org/wikipedia/en/8/81/True_Lies_poster.png",
+		"numLikes": 0,
+		"numDislikes": 0
+	  }	  
+	]
+}

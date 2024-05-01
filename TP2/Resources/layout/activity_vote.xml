@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VoteActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" 
+    />
+
+    <TextView
+        android:id="@+id/lblVoteMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/vote_movie"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lblMovieName"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMovieName"
+        android:text="Movie name"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblVoteMovie"
+        app:layout_constraintBottom_toTopOf="@id/imgMoviePicture"
+    />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imgMoviePicture"
+        android:src="@drawable/placeholder"
+        app:layout_constraintTop_toBottomOf="@id/lblMovieName"
+        app:layout_constraintBottom_toTopOf="@id/btnLikeMovie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+    />
+  
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLikeMovie"
+        android:text="@string/like"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/imgMoviePicture"
+        app:layout_constraintBottom_toTopOf="@id/lblPctLike"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPctLike"
+        android:text="100%"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnLikeMovie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+    />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDislikeMovie"
+        android:text="@string/dislike"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Dislike movie" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnLikeMovie"
+        app:layout_constraintBottom_toBottomOf="@id/btnLikeMovie"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPctDisLike"
+        android:textColor="@android:color/white"
+        android:text="100%"   
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lblPctLike"
+        app:layout_constraintBottom_toBottomOf="@id/lblPctLike"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNextMovie"
+        android:text="@string/btn_next"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Next movie"
+        app:layout_constraintLeft_toRightOf="@id/lblPctLike"
+        app:layout_constraintRight_toLeftOf="@id/lblPctDisLike"
+        app:layout_constraintTop_toBottomOf="@id/btnLikeMovie"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:text="@string/btn_back"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/lblPctLike"
+        app:layout_constraintRight_toLeftOf="@id/lblPctDisLike"
+        app:layout_constraintTop_toBottomOf="@id/btnNextMovie"
+        app:layout_constraintBottom_toBottomOf="parent"  
+    />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Movie Score</string>
+	<string name="add_movie">ADD A NEW MOVIE</string>
+	<string name="vote_movie">VOTE FOR A MOVIE</string>
+
+	<string name="btn_add">ADD MOVIE</string>
+	<string name="btn_vote">VOTE</string>
+	<string name="btn_back">BACK TO MAIN MENU</string>
+	<string name="btn_next"> ➔ NEXT MOVIE ➔ </string>
+
+	<string name="like"> 👍 </string>
+	<string name="dislike"> 👎 </string>
+
+	<string name="lbl_movie_name">Movie name:</string>
+	<string name="lbl_movie_url">Movie URL:</string>
+	<string name="edit_movie_name">Enter your movie name</string>
+	<string name="edit_movie_url">Enter your movie url</string>
+
+	<string name="error_open_database">Connection failed</string>
+
+	<string name="success_add">The movie has been successfully added</string>
+	<string name="fail_add">The movie couldn\'t be added</string>
+
+	<string name="fail_vote">Your vote coudn\'t be saved</string>
+</resources>
